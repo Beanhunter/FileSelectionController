@@ -260,7 +260,7 @@ open class FileSelectionViewController: UIViewController
         }
     }
 
-    open static func present (_ multiple: Bool = false, completion: (([UIImage], NSError?) -> ())?) throws
+    public static func present (_ multiple: Bool = false, completion: (([UIImage], NSError?) -> ())?) throws
     {
         let controller = FileSelectionViewController();
         try controller.present(multiple, completion: completion)
